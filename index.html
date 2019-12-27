@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Les pieds sous la table</title>
+
+    <link rel="stylesheet" href="static/dist/bootstrap.min.css">
+    <link rel="stylesheet" href="static/style.css">
+
+    <script src="static/dist/jquery-3.3.1.slim.min.js"></script>
+    <script src="static/dist/popper.min.js"></script>
+    <script src="static/dist/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            var header = $("#siteWrapper header");
+
+            function scrolled() {
+                var windowHeight = document.body.clientHeight,
+                    currentScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                currentScroll >= 140 - header.outerHeight() ? header.addClass("fixed") : header.removeClass("fixed");
+            }
+
+            addEventListener("scroll", scrolled, false);
+
+            $('.carousel').carousel({
+                pause: "false"
+            });
+        });
+    </script>
+</head>
+<body>
+
+
+<div id="informations">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col">
+                <p>
+                    <i>
+                        11 rue des Ternes 75017 PARIS
+                    </i>
+                </p>
+            </div>
+            <div class="col">
+            </div>
+            <div class="col">
+                <p>
+                    <i>
+                        Ouverture du lundi au vendredi - 9h à 20h
+                    </i>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="siteWrapper">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand" href="#">
+                <h4>Les pieds sous la table</h4>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Nos produits
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Bocaux</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Prêt à manger</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Aides culinaires</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Produits secs, épicerie</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Demandes particulières</a>
+                        </div>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Nos Fournisseurs
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Présentation</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Viandes et volailles</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Fruits & Légumes</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Autres</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Contact
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Nous contacter</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Newsletter</a>
+                        </div>
+                    </li>
+
+                    <!--
+                    <li>
+                        <a>
+                            <img width="30px" src="https://p7.hiclipart.com/preview/719/640/929/united-kingdom-emoji-flag-sticker-tonnelleries-de-bourgogne-england.jpg">
+                        </a>
+                    </li>
+                    -->
+
+                </ul>
+
+                <a href="#">
+                    <img src="static/icon/facebook.png"
+                         width="30" height="30">
+                </a>
+                &nbsp;&nbsp;
+                <a href="#">
+                    <img src="static/icon/instagram.png"
+                         width="30" height="30">
+                </a>
+
+            </div>
+        </nav>
+    </header>
+
+
+    <section id="content" class="">
+
+        <div id="video-carousel-example" class="carousel slide carousel-fade" data-ride="carousel"
+             style="width: 100%; height: 100%; margin-top: -20px;">
+            <!--Indicators-->
+            <ol class="carousel-indicators">
+                <li data-target="#video-carousel-example" data-slide-to="0" class="active"></li>
+                <li data-target="#video-carousel-example" data-slide-to="1"></li>
+                <li data-target="#video-carousel-example" data-slide-to="2"></li>
+                <li data-target="#video-carousel-example" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <div class="view">
+                        <video class="video-fluid" autoplay muted width="100%" height="10%">
+                            <source src="static/video/Field - 16288.mp4"
+                                    type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="carousel-caption">
+                        <div class="animated fadeInDown">
+                            <h1>Les pieds sous la table</h1>
+                            <p><i>Boutique de prêt à manger</i></p>
+
+                            <h3>Des produits frais, de producteurs locaux</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div>
+                        <video class="video-fluid" autoplay muted width="100%" height="100%">
+                            <source src="static/video/Diet - 26731.mp4"
+                                    type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="carousel-caption">
+                        <div class="animated fadeInDown">
+                            <h1>Les pieds sous la table</h1>
+                            <p><i>Boutique de prêt à manger</i></p>
+
+                            <h3>Des produits travaillés avec amour...</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div>
+                        <video class="video-fluid" autoplay muted width="100%" height="100%">
+                            <source src="static/video/Fire - 11016.mp4"
+                                    type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="carousel-caption">
+                        <div class="animated fadeInDown">
+                            <h1>Les pieds sous la table</h1>
+                            <p><i>Boutique de prêt à manger</i></p>
+
+                            <h3>Mijotés tranquillement...</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div>
+                        <video class="video-fluid" autoplay muted width="100%" height="100%">
+                            <source src="static/video/Roast - 11620.mp4"
+                                    type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="carousel-caption">
+                        <div class="animated fadeInDown">
+                            <h1>Les pieds sous la table</h1>
+                            <p><i>Boutique de prêt à manger</i></p>
+
+                            <h3>Pour vous en mettre pleins les yeux et les papilles</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#video-carousel-example" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#video-carousel-example" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <div class="row" style="width: 100%">
+            <div class="col-sm-12 citation citation-top">
+
+                <div class="row">
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-6 align-self-center" style="opacity: 0.80;">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Une boutique en plein coeur de Paris</h5>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci, aliquid
+                                    aspernatur aut consequuntur dolorum earum expedita numquam praesentium. Culpa cum
+                                    dolorem fuga inventore, labore laudantium maxime quasi quibusdam repudiandae.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-6 split-grid">
+                <img width="100%" height="100%"
+                     src="static/img/dark-mood-food-2983709_1920.jpg">
+            </div>
+
+            <div class="col-sm-6 split-grid">
+                <div>
+                    <h2>On aime lé produi frés !</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, eveniet facere? Distinctio
+                        dolore doloribus est, iste itaque labore laboriosam laborum minus natus nulla quae quas ratione
+                        reiciendis sit veritatis voluptas!
+                    </p>
+                    <p>Ab aliquid aspernatur at atque corporis cum, deleniti dolor dolorum eligendi hic illo, incidunt
+                        libero maxime natus nihil non odio omnis perferendis perspiciatis quasi quisquam repellendus
+                        sunt tempore, voluptate voluptatem?
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="col-sm-6 split-grid">
+                <div>
+                    <h2>Dé conserve t'en veu ? En v'la !</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, eveniet facere? Distinctio
+                        dolore doloribus est, iste itaque labore laboriosam laborum minus natus nulla quae quas ratione
+                        reiciendis sit veritatis voluptas!
+                    </p>
+                    <p>Ab aliquid aspernatur at atque corporis cum, deleniti dolor dolorum eligendi hic illo, incidunt
+                        libero maxime natus nihil non odio omnis perferendis perspiciatis quasi quisquam repellendus
+                        sunt tempore, voluptate voluptatem?
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-sm-6 split-grid">
+                <img width="100%" height="100%"
+                     src="static/img/jam-428094_1920.jpg">
+            </div>
+
+
+            <div class="col-sm-6" style="background-color: black;">
+                <img width="100%" height="100%"
+                     src="static/img/chef-1245676_1920.jpg">
+            </div>
+
+            <div class="col-sm-6 split-grid">
+                <div>
+                    <h2>Nous, on cuisine et cé tou</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, eveniet facere? Distinctio
+                        dolore doloribus est, iste itaque labore laboriosam laborum minus natus nulla quae quas ratione
+                        reiciendis sit veritatis voluptas!
+                    </p>
+                    <p>Ab aliquid aspernatur at atque corporis cum, deleniti dolor dolorum eligendi hic illo, incidunt
+                        libero maxime natus nihil non odio omnis perferendis perspiciatis quasi quisquam repellendus
+                        sunt tempore, voluptate voluptatem?
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="col-sm-12 citation citation-bottom">
+
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h4>Les pieds sous la table</h4>
+                    <div class="dropdown-divider"></div>
+                </div>
+
+                <div class="col-6">
+
+                    <ul>
+                        <li>contacts (téléphone, mail, adresse)</li>
+                        <li>Nous trouver</li>
+                        <li>Français / Anglais</li>
+                    </ul>
+
+                </div>
+
+                <div class="col-6">
+
+                    <ul>
+                        <li>Mentions légales</li>
+                        <li>Condition générales de vente</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</div>
+
+</body>
+</html>

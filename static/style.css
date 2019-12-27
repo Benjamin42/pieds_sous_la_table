@@ -1,0 +1,84 @@
+body {
+    background-color: #f4eedf;
+}
+
+/* Navbar and menu */
+
+header {
+    z-index: 10;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#informations {
+    padding-top: 15px;
+    height: 60px;
+}
+
+#siteWrapper header {
+    height: 80px;
+}
+
+#siteWrapper header.fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+#siteWrapper header.fixed + #content {
+    margin-top: 80px;
+}
+
+/* Carousel and video */
+video {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    margin-bottom: 300px;
+}
+
+/* Tiles */
+
+.split-grid {
+    padding: 0px;
+}
+
+.split-grid > div {
+    margin: 20px;
+    padding: 20px;
+}
+
+/* White citations */
+
+.citation {
+    padding: 20px;
+    padding-top: 100px;
+    height: 500px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 100% 0%;
+    background-size: 100%;
+}
+
+.citation-top {
+    background-image: url("img/eiffel-tower-984733_1920.jpg");
+}
+
+.citation-bottom {
+    height: 600px;
+    background-image: url("img/spices-2548490_1920.jpg");
+}
+
+/* footer */
+
+footer {
+    background-color: white;
+    padding-top: 20px;
+}
